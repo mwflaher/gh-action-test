@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: mwflaher/gh-rudderstack-action
+      - uses: mwflaher/gh-rudderstack-action@0.1.0
         with:
           name: BuildStarted
           user: Matt
