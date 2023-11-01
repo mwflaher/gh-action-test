@@ -7,9 +7,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      RUDDERSTACK_DATAPLANE_URL:  ${{ secrets.RUDDERSTACK_DATAPLANE_URL }}
+      RUDDERSTACK_WRITE_KEY:  ${{ secrets.RUDDERSTACK_WRITE_KEY }}
+      
     steps:
-      - uses: mwflaher/gh-rudderstack-action@v0.1.0
+      - uses: mwflaher/gh-rudderstack-action@v0.4.0
         with:
           name: BuildStarted
-          user: Matt
