@@ -15,3 +15,4 @@ jobs:
       - uses: mwflaher/gh-rudderstack-action@v0.4.0
         with:
           event: BuildStarted
+          userId: mwflaher
