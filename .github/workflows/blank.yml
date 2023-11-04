@@ -16,3 +16,5 @@ jobs:
         with:
           event: BuildStarted
           userId: mwflaher
+          properties: >
+            {"testProperty":"test_value"}
