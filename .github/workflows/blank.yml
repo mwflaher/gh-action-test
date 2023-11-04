@@ -12,7 +12,7 @@ jobs:
       RUDDERSTACK_WRITE_KEY:  ${{ secrets.RUDDERSTACK_WRITE_KEY }}
       
     steps:
-      - uses: mwflaher/gh-rudderstack-action@v0.4.0
+      - uses: mwflaher/gh-rudderstack-action@v0.5.0
         with:
           event: BuildStarted
           userId: mwflaher
